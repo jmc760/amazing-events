@@ -21,13 +21,12 @@ body>footer>div {
 
 @media only screen and (min-width:1080px) {
     body>footer>div {
-        width: 100vw;
+        width: 95vw;
         flex-direction: row;
         justify-content: space-around;
         gap: 30vw;
     }
 }
-
 
 body>footer nav {
     width: 100vw;

@@ -27,7 +27,7 @@ form {
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:768px) {
 
     .grid-2col {
         display: grid;
@@ -86,7 +86,7 @@ label {
     cursor: pointer;
 }
 
-main>div{
+main>div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -122,7 +122,7 @@ main>div>article {
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
 }
 
-main>div>article img {
+main>div>article>figure>img {
     width: 225px;
     height: 125px;
     object-fit: cover;
@@ -135,7 +135,7 @@ article h2 {
     font-weight: 700;
 }
 
-article footer{
+article footer {
     align-self: center;
     display: flex;
     align-items: center;
@@ -163,10 +163,50 @@ article footer button {
     -moz-transition: .3s, color .10s;
 }
 
-article footer button:hover{
-    color:#ed5485;
+article footer button:hover {
+    color: #ed5485;
     background-color: #fafafa;
     cursor: pointer;
     padding: 10px 15px;
     filter: contrast(120%) drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4));
+}
+
+.upcoming {
+    color: #ed5485;
+    font-weight: 700;
+    background-color: #57d1c9;
+}
+
+.upcoming:hover {
+    color: #57d1c9;
+}
+
+.past {
+    color: #552200ff;
+    font-weight: 700;
+    background-color: #ff9955ff;
+}
+
+.past:hover {
+    color: #552200ff;
+    background-color: #fafafa;
+}
+
+.badge {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    filter: contrast(120%) drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4));
+    transition: .3s, color .10s;
+    -webkit-transition: .3s, color .10s;
+    -moz-transition: .3s, color .10s;
+}
+
+.badge:hover {
+    transform: rotateZ(180deg);
+    -webkit-transform: rotateZ(180deg);
+    -moz-transform: rotateZ(180deg);
 }
