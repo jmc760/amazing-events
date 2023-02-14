@@ -150,9 +150,10 @@ article footer {
     font-style: italic;
 }
 
-article footer button {
+article footer a {
+    text-decoration: none;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: #fafafa;
     background-color: #ed5485;
@@ -164,7 +165,7 @@ article footer button {
     -moz-transition: .3s, color .10s;
 }
 
-article footer button:hover {
+article footer a:hover {
     color: #ed5485;
     background-color: #fafafa;
     cursor: pointer;
