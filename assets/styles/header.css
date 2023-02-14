@@ -2,7 +2,6 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #57d1c9;
-    gap: 2rem;
 }
 
 @media only screen and (min-width:1080px) {
@@ -22,12 +21,14 @@ header section {
 
 header nav {
     flex-direction: column;
+    margin: 0 0 2rem 0;
 }
 
 @media only screen and (min-width:1080px) {
     header nav {
         flex-direction: row;
         justify-content: space-around;
+        margin: 0;
     }
 }
 
