@@ -40,7 +40,7 @@ form {
     form {
         flex-direction: row;
         justify-content: space-between;
-        width: 90vw;
+        width: 90%;
     }
 }
 
@@ -92,12 +92,10 @@ main>div {
     align-items: center;
     justify-content: center;
     gap: 10vw;
-    width: 85vw;
 }
 
 @media only screen and (min-width:578px) {
     main>div {
-        width: 90vw;
         gap: 5vw;
     }
 }
