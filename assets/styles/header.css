@@ -168,13 +168,19 @@ header nav a:hover {
 header section {
     flex-direction: row;
     justify-content: space-around;
-    height: 25vh;
+    height: 30vh;
     background-image: linear-gradient(#D7CB66, #ffe869);
 }
 
 @media only screen and (min-width:768px) {
     header section {
         height: 30vw;
+    }
+}
+
+@media only screen and (min-height:568px) {
+    header section {
+        height: 40vw;
     }
 }
 

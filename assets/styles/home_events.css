@@ -5,6 +5,7 @@ main {
     justify-content: center;
     gap: 5vh;
     margin: 5vh 0;
+    width: 100%;
 }
 
 @media only screen and (min-width:1080px) {
@@ -40,7 +41,7 @@ form {
     form {
         flex-direction: row;
         justify-content: space-between;
-        width: 90%;
+        width: 85vw;
     }
 }
 
@@ -92,10 +93,12 @@ main>div {
     align-items: center;
     justify-content: center;
     gap: 10vw;
+    width: 85vw;
 }
 
 @media only screen and (min-width:578px) {
     main>div {
+        width: 90vw;
         gap: 5vw;
     }
 }

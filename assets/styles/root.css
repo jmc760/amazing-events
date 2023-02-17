@@ -6,6 +6,7 @@
     font-size: 16px;
     color: #202020;
     background-image: linear-gradient(to top right, #9575CD,#4527A0);
+    overflow-x: hidden;
 }
 
 /* font-family: 'Suez One', serif; */
@@ -15,6 +16,7 @@
 }
 
 body {
+    height: 100%;
     width: 100%;
 }
 
