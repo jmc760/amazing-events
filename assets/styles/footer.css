@@ -21,16 +21,15 @@ body>footer>div {
 
 @media only screen and (min-width:1080px) {
     body>footer>div {
-        width: 85vw;
+        width: 65vw;
         flex-grow: 1;
         flex-direction: row;
         justify-content: space-around;
-        gap: 30vw;
     }
 }
 
 body>footer nav {
-    width: 95vw;
+    width: 65vw;
     display: flex;
     flex-direction: row;
     align-items: center;
