@@ -117,7 +117,7 @@ main>div>article {
     gap: 2vh;
     width: 350px;
     height: 375px;
-    padding: 50px 0 30px 0;
+    padding: 50px 30px 30px 30px;
     background-color: #fafafa;
     border-radius: 20px;
     border: 2px solid #202020;
@@ -137,6 +137,10 @@ article h2 {
     font-weight: 700;
 }
 
+article p {
+    text-align: center;
+}
+
 article footer {
     align-self: center;
     display: flex;
@@ -146,9 +150,14 @@ article footer {
 }
 
 .price {
-    font-size: 15px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 900;
     font-style: italic;
+    color:#00695C;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    padding: 10px;
+    letter-spacing: 1px;
 }
 
 article footer a {
