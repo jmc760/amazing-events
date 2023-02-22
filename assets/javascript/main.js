@@ -178,8 +178,6 @@ function addZeroToMonth(dateWithoutZero) {
         dateWithoutZero.substring(5, dateWithoutZero.length);
     return dateWithZero;
 }
-console.log(addZeroToMonth(data.events[12].date));
-
 
 function correctMonthDate(dateToCorrect) {
     let monthDateCorrected;
@@ -190,8 +188,6 @@ function correctMonthDate(dateToCorrect) {
     }
     return monthDateCorrected;
 }
-console.log(correctMonthDate(data.events[12].date));
-
 
 function removeDash(dashedDate) {
     let undashedDate =
@@ -200,8 +196,6 @@ function removeDash(dashedDate) {
         dashedDate.slice(8,10);
     return undashedDate;
 }
-console.log(removeDash(correctMonthDate(data.events[12].date)));
-
 
 function getNumberDate(date){
     let numberDate = parseInt(
@@ -209,7 +203,18 @@ function getNumberDate(date){
     )
     return numberDate;
 }
-console.log(getNumberDate(data.events[12].date));
 
 let referenceDate = getNumberDate(data.currentDate);
 console.log(referenceDate);
+
+let arrPastEvents=[];
+let arrFutureEvents=[];
+for(let event of data.events){
+    if(getNumberDate(event.date)<referenceDate){
+        arrPastEvents.push(event);
+    } else if(getNumberDate(event.date)>referenceDate){
+        arrFutureEvents.push(event);
+    }
+}
+console.log(arrPastEvents);
+console.log(arrFutureEvents);
