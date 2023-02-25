@@ -29,18 +29,3 @@ function getNumberDate(date){
     )
     return numberDate;
 }
-
-let referenceDate = getNumberDate(data.currentDate);
-console.log(referenceDate);
-
-let arrPastEvents=[];
-let arrFutureEvents=[];
-for(let event of data.events){
-    if(getNumberDate(event.date)<referenceDate){
-        arrPastEvents.push(event);
-    } else if(getNumberDate(event.date)>referenceDate){
-        arrFutureEvents.push(event);
-    }
-}
-console.log(arrPastEvents);
-console.log(arrFutureEvents);
