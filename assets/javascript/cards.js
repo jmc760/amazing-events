@@ -17,7 +17,3 @@ function appendCard(card){
     let cardSection = document.getElementById("cards-section");
     cardSection.appendChild(card);
 }
-
-function renderCards(events) {
-    events.forEach(event => appendCard(createCard(event)));
-}
