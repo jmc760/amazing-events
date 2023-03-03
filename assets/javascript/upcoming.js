@@ -1,4 +1,4 @@
-function printFutureEvents(events) {
+/* function printFutureEvents(events) {
     for (let event of events) {
         let cardSection = document.getElementById("cards-section");
         let card = document.createElement("article");
@@ -15,15 +15,11 @@ function printFutureEvents(events) {
             </footer>`;
         cardSection.appendChild(card);
     }
+} */
+
+function filterFuture(events, referenceDate) {
+    let futureEvents = events.filter(event => getNumberDate(event.date) > referenceDate);
+    return futureEvents;
 }
 
-let referenceDate = getNumberDate(data.currentDate);
-let arrFutureEvents = [];
-
-for (let event of data.events) {
-    if (getNumberDate(event.date) > referenceDate) {
-        arrFutureEvents.push(event);
-    }
-}
-
-printFutureEvents(arrFutureEvents);
+renderCards(filterFuture(data.events, getNumberDate(data.currentDate)));
