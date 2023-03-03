@@ -183,27 +183,6 @@ article footer a:hover {
     filter: contrast(120%) drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4));
 }
 
-.upcoming {
-    color: #ed5485;
-    font-weight: 700;
-    background-color: #57d1c9;
-}
-
-.upcoming:hover {
-    color: #57d1c9;
-}
-
-.past {
-    color: #552200ff;
-    font-weight: 700;
-    background-color: #ff9955ff;
-}
-
-.past:hover {
-    color: #552200ff;
-    background-color: #fafafa;
-}
-
 .badge {
     position: absolute;
     width: 80px;
