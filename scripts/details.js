@@ -7,12 +7,12 @@ function createDetailCard(event){
         <div>
             <h2>${event.name}</h2>
             <div>
-                <p>Date:</p><p>${event.date}</p>
-                <p>Description:</p><p>${event.description}</p>
-                <p>Category:</p><p>${event.category}</p>
-                <p>Place:</p><p>${event.place}</p>
-                <p>Capacity:</p><p>${event.capacity}</p>
-                <p>Price:</p><p>${event.price}</p>
+                <p class="description">Date:</p><p>${event.date}</p>
+                <p class="description">Description:</p><p>${event.description}</p>
+                <p class="description">Category:</p><p>${event.category}</p>
+                <p class="description">Place:</p><p>${event.place}</p>
+                <p class="description">Capacity:</p><p>${event.capacity}</p>
+                <p class="description">Price:</p><p>$${event.price}</p>
             </div>
         </div>`;
     return card;
@@ -28,9 +28,7 @@ function findEventById(events, id){
     return eventFound;
 }
 
-let query = location.search;
-
-let params = new URLSearchParams(query);
+let params = new URLSearchParams(location.search);
 
 let id_query = parseInt(params.get("id"));
 
