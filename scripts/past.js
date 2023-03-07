@@ -19,8 +19,6 @@ function pastCaptureData() {
             && (checks.length === 0 || checks.includes(event.category))
     })
 
-    console.log(capturedData);
-
     if (capturedData.length > 0) {
         renderCards("past", "#cards-section", capturedData);
     } else {

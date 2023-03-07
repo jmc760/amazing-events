@@ -13,9 +13,7 @@ function captureData() {
             (event.name.toUpperCase()).includes(text.upperCase))
             && (checks.length === 0 || checks.includes(event.category))
     })
-
-    console.log(capturedData)
-
+    
     if (capturedData.length > 0) {
         renderCards("", "#cards-section", capturedData);
     } else {
