@@ -41,23 +41,36 @@
         <form method="get">
             <fieldset class="grid-2col">
                 <label for="category1">
-                    <input type="checkbox" name="category" id="category1" value="category1">
-                    Category</label>
+                    <input onclick="futureCaptureData()" type="checkbox" name="category" id="Food Fair" value="category1"
+                        class="checks">
+                    Food Fair</label>
                 <label for="category2">
-                    <input type="checkbox" name="category" id="category2" value="category2">
-                    Category</label>
+                    <input onclick="futureCaptureData()" type="checkbox" name="category" id="Museum" value="category2"
+                        class="checks">
+                    Museum</label>
                 <label for="category3">
-                    <input type="checkbox" name="category" id="category3" value="category3">
-                    Category</label>
+                    <input onclick="futureCaptureData()" type="checkbox" name="category" id="Costume Party" value="category3"
+                        class="checks">
+                    Costume Party</label>
                 <label for="category4">
-                    <input type="checkbox" name="category" id="category4" value="category4">
-                    Category</label>
+                    <input onclick="futureCaptureData()" type="checkbox" name="category" id="Music Concert" value="category4"
+                        class="checks">
+                    Music Concert</label>
                 <label for="category5">
-                    <input type="checkbox" name="category" id="category5" value="category5">
-                    Category</label>
+                    <input onclick="futureCaptureData()" type="checkbox" name="category" id="Race" value="category5"
+                        class="checks">
+                    Race</label>
+                <label for="category6">
+                    <input onclick="futureCaptureData()" type="checkbox" name="category" id="Book Exchange" value="category6"
+                        class="checks">
+                    Book Exchange</label>
+                <label for="category7">
+                    <input onclick="futureCaptureData()" type="checkbox" name="category" id="Cinema" value="category7"
+                        class="checks">
+                    Cinema</label>
             </fieldset>
             <fieldset>
-                <input type="text" name="search" id="search" value="search">
+                <input onkeyup="futureCaptureData()" type="text" name="search" id="search" value="">
                 <button class="float" type="submit"><img src="assets/img/magnifying_glass.svg"
                         alt="search-icon"></button>
             </fieldset>
@@ -91,8 +104,8 @@
         </small>
     </footer>
     <script src="scripts/data_ae_1.js"></script>
+    <script src="scripts/card.js"></script>
     <script src="scripts/correct_date.js"></script>
-    <script src="scripts/cards.js"></script>
     <script src="scripts/upcoming.js"></script>
 </body>
 <!-- Juan Manuel Cerdeira -->

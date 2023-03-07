@@ -3,13 +3,29 @@ function filterFuture(events, referenceDate) {
     return futureEvents;
 }
 
-function addFutureBadge(card){
-    card.innerHTML += `<img class="badge" src="assets/img/badge.svg" alt="Coming Soon Badge">`;
-    return card;
+function futureCaptureData() {
+    let text = {
+        search: document.getElementById("search").value,
+        lowerCase: document.getElementById("search").value.toLowerCase(),
+        upperCase: document.getElementById("search").value.toUpperCase()
+    }
+    let checks = Array.from(document.querySelectorAll(".checks:checked")).map(category => category.id);
+    let futureEvents = filterFuture(data.events, getNumberDate(data.currentDate));
+
+    let capturedData = futureEvents.filter(event => {
+        return (event.name.includes(text.search) ||
+            (event.name.toLowerCase()).includes(text.lowerCase) ||
+            (event.name.toUpperCase()).includes(text.upperCase))
+            && (checks.length === 0 || checks.includes(event.category))
+    })
+
+    if (capturedData.length > 0) {
+        renderCards("future", "#cards-section", capturedData);
+    } else {
+        notFound("#cards-section");
+    }
 }
 
-function renderFutureCards(events) {
-    events.forEach(event => appendCard(addFutureBadge(createCard(event))));
-}
+let futureEvents = filterFuture(data.events, getNumberDate(data.currentDate));
 
-renderFutureCards(filterFuture(data.events, getNumberDate(data.currentDate)));
+renderCards("future", "#cards-section", futureEvents);

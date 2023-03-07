@@ -85,6 +85,7 @@ form button img {
 
 label {
     cursor: pointer;
+    font-size: 13px;
 }
 
 main>div {
@@ -109,7 +110,7 @@ main>div {
     }
 }
 
-main>div>article {
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,4 +201,21 @@ article footer a:hover {
     transform: rotateZ(180deg);
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
+}
+
+.none {
+    display: none;
+}
+
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vh;
+    padding: 50px 30px 30px 30px;
+    background-color: #fafafa;
+    border-radius: 20px;
+    border: 2px solid #202020;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
 }
