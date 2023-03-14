@@ -28,7 +28,7 @@ function templateCard(time, event) {
             <p>${event.description}</p>
             <footer>
                 <p class="price">$${event.price}</p>
-                <a href="details.html?id=${event._id}">Ver más</a>
+                <a href="details.html?id=${event.id}">Ver más</a>
             </footer>
         </article>`;
 
